@@ -9,22 +9,24 @@ function valider (e) {
 
 function FormBlog(){
 
+    const [input_email, setInputEmail] = useState('');
     const [input_name, setInputName] = useState('');
     const [input_commentaire, setInputCommentaire] = useState('');
 
-    let InputErrorNumber = input_name.includes("_");
+    let InputErrorNumber = input_email.includes("@");
 
     return (
         <form className="form" onSubmit={valider}>
+            <input type="text" name="mon_email" onChange={(e)=> setInputEmail(e.target.value)}/>
             <input type="text" name="mon_nom" onChange={(e)=> setInputName(e.target.value)}/>
             <input type="text" name="mon_commentaire" onChange={(e)=> setInputCommentaire(e.target.value)}/>
-            {/* <button type='submit' onClick={()=> alert(input_name + " " + input_commentaire)}>Valider votre commentaire</button> */}
             { InputErrorNumber ?
-                <div>
-                    <p className="error">Le nom ne doit pas contenir de "_"</p>
-                </div>
+
+                <button type='submit' onClick={()=> alert(input_email + " " + input_name + " " + input_commentaire)}>Valider votre commentaire</button>
                 :
-                <button type='submit' onClick={()=> alert(input_name + " " + input_commentaire)}>Valider votre commentaire</button>
+                <div>
+                    <p className="error">L'email doit contenir un "@"</p>
+                </div>
             }
         </form>
     );
