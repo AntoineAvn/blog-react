@@ -1,13 +1,15 @@
+import { Route, Routes } from "react-router-dom";
+import UserCard from "./UserCard";
 import Banniere from "./Banniere";
-import logo from '../assets/images/logo.svg';
-
 
 function App() {
   return(
-    <Banniere>
-      <img src={logo} className='img_logo' alt="logo" />
-      <h1 className='titre'>Bienvenue sur Blogeo</h1>
-    </Banniere>
+    <div>
+      <Banniere />
+      <Routes>
+        <Route path="/userCard" element={<UserCard />} />
+      </Routes>
+    </div>
   )
 
 }
