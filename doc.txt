@@ -1,0 +1,19 @@
+/// Extension /// 
+ES7+ React/Redux/React-Native snipp
+
+/// Installation vite.js ///
+
+npm create vite@latest
+yes
+projectName
+React
+Javascript (normal)
+puis cd dans le projectName
+npm i
+
+/// Pour lancer un localhost: ///
+
+npm run dev
+
+/// react-router-dom ///
+npm i react-router-dom
