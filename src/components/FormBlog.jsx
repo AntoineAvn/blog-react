@@ -17,9 +17,9 @@ function FormBlog(){
 
     return (
         <form className="form" onSubmit={valider}>
-            <input type="text" name="mon_email" onChange={(e)=> setInputEmail(e.target.value)}/>
-            <input type="text" name="mon_nom" onChange={(e)=> setInputName(e.target.value)}/>
-            <input type="text" name="mon_commentaire" onChange={(e)=> setInputCommentaire(e.target.value)}/>
+            <input type="text" name="mon_email" placeholder="Email" onChange={(e)=> setInputEmail(e.target.value)}/>
+            <input type="text" name="mon_nom" placeholder="Nom" onChange={(e)=> setInputName(e.target.value)}/>
+            <input type="text" name="mon_commentaire" placeholder="Commentaire" onChange={(e)=> setInputCommentaire(e.target.value)}/>
             { InputErrorNumber ?
 
                 <button type='submit' onClick={()=> alert(input_email + " " + input_name + " " + input_commentaire)}>Valider votre commentaire</button>
