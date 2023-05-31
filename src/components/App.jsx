@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import UserCard from "./UserCard";
-import Banniere from "./Banniere";
-import FormBlog from "./FormBlog";
+import UserCard from "./UserCard/UserCard";
+import Banniere from "./Banniere/Banniere";
+import FormBlog from "./FormBlog/FormBlog";
 
 function App() {
 

@@ -1,4 +1,4 @@
-import '../styles/formBlog.css'
+import './formBlog.css'
 import { useState } from 'react'
 
 function valider (e) {
