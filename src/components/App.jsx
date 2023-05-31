@@ -1,11 +1,11 @@
 import { Route, Routes } from "react-router-dom";
-import UserCard from "./UserCard/UserCard";
-import Banniere from "./Banniere/Banniere";
-import FormBlog from "./FormBlog/FormBlog";
+import UserCard from "./UserCard";
+import Banniere from "./Banniere";
+import FormBlog from "./FormBlog";
+
 
 function App() {
-
-  return(
+  return (
     <div>
       <Banniere />
       <Routes>
@@ -13,8 +13,7 @@ function App() {
         <Route path="/form" element={<FormBlog />} />
       </Routes>
     </div>
-  )
-
+  );
 }
 
-export default App;  
+export default App;

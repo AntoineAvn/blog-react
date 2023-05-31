@@ -1,5 +1,5 @@
-import './banniere.css';
-import logo from '../../assets/images/logo.svg';
+import '../styles/banniere.css';
+import logo from '../assets/images/logo.svg';
 import { Link } from 'react-router-dom';
 
 

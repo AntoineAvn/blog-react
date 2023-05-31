@@ -1,4 +1,4 @@
-import "./userCard.css";
+import "../styles/userCard.css";
 import UserInfo from "./UserInfo.jsx";
 
 function UserCard() {

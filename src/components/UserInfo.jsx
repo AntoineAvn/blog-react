@@ -1,6 +1,6 @@
 import React from "react";
 import Rating from "./Rating.jsx";
-import "./userCard.css";
+import "../styles/userCard.css";
 
 export default function UserInfo({
   index,
